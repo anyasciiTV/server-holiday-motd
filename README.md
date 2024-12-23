@@ -43,8 +43,10 @@ For some distros, the directory might be /etc/motd.d or /etc/motd
   ```
 6.The MOTD shoud now display whenever a user logs in. You can test it initially on the server with simulating a login:
 ```bash
-  ssh local
+  ssh localhost
   ```
+
+# Demo Under Construction 🚧
 
 # Building Your Own Designs 🖌️
 Want to create your own ASCII art? Start with tools like jp2a for inspiration or go old-school with a plain text editor.
