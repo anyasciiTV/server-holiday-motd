@@ -8,13 +8,20 @@ A simple customizable holiday themed Message of the Day script designed for Linu
 
 # Features 🎁
 
-- Spmple Holiday ASCII Art : A cheerful winter holiday design that adds a festive touch to your server login.
+- Simple Holiday ASCII Art : A cheerful winter holiday design that adds a festive touch to your server login.
 - Easy Customization: Modify or adapt the artwork to fit your own message or theme.
 - Easy Setup: Just copy, paste, and share the joy—no fancy setup required!
 
-# How to Use 🛠️
+# Installation and Setup 🛠️
 
-*Under construction!***
+Follow these steps to add some holiday cheer to your server's MOTD using the 00-holiday.sh script:
+
+### Download the Repository:
+Use `wget` to download the entire repository as a zip file:
+```bash
+wget https://github.com/your-username/holiday-motd/archive/main.zip
+
+
 
 # Building Your Own Designs 🖌️
 Want to create your own ASCII art? Start with tools like jp2a for inspiration or go old-school with a plain text editor.
