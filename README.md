@@ -4,7 +4,7 @@ Celebrate the holidays with a touch of nostalgia and creativity! This repository
 
 # Description:
 
-A simple customizable holiday themed Message of the Day script designed for Linux based servers 
+A simple customizable holiday themed Message of the Day script designed for Linux based servers. 
 
 # Features 🎁
 
@@ -17,11 +17,34 @@ A simple customizable holiday themed Message of the Day script designed for Linu
 Follow these steps to add some holiday cheer to your server's MOTD using the 00-holiday.sh script:
 
 ### Download the Repository:
-Use `wget` to download the entire repository as a zip file:
+1. Use wget to download the entire repository as a zip file:
+  ```bash
+  wget https://github.com/anyasciiTV/holiday-motd/archive/main.zip
+  ```
+2. Extract the Repository:
+  ```bash
+  unzip main.zip
+  cd server-holiday-motd-main
+  ```
+3. If you don't have unzip, you can install it with the following commands:
+  ```bash
+  sudo apt install unzip # Debian distros
+  sudo yum install unzip # Fedora/Red Hat distros
+  ```
+4. Copy the 00-holiday.sh script to the MOTD directory on your server:
+  ```bash
+  sudo cp 00-holiday.sh /etc/motd.d/
+  ```
+For some distros, the directory might be /etc/motd.d or /etc/motd
+5. Make the 00-holiday.sh script executable
 ```bash
-wget https://github.com/your-username/holiday-motd/archive/main.zip
-
-
+  cd /etc/update-motd.d
+  chmod +x 00-holiday.sh 
+  ```
+6.The MOTD shoud now display whenever a user logs in. You can test it initially on the server with simulating a login:
+```bash
+  ssh local
+  ```
 
 # Building Your Own Designs 🖌️
 Want to create your own ASCII art? Start with tools like jp2a for inspiration or go old-school with a plain text editor.
